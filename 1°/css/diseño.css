@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    background-color: #2E0E36;
+    margin: 0px;
+}
+.main-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5E2D4F;
+}
+
+.main-menu__logo{
+    width: 3.2em;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 50%;
+}
+.main-menu__list li {
+    list-style: none;
+    margin-top: 0.5em;
+}
+.main-menu__list li a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: all 0.5s;
+}
+.main-menu__list{
+    z-index: 3;
+    position: fixed;
+    background-color: #262335;
+    width: 100%;
+    top:3em;
+    right: 0px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+.active-menu{
+    transform: translateX(0%);
+}
+.main-menu__btn{
+    width: 2.5em;
+    height: 2em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    border:0px;
+    cursor: pointer;
+}
+.main-menu__btn span{
+    width: 95%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #C2A0CE;
+}
+.primero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5em;
+}
+.imagen-1{
+    display: flex;
+    width: 60%;
+    height: 30em;
+    margin-left: 5em;
+    margin-right: 1em;
+}
+.hola{
+    flex-direction:row;
+    margin-right: 3em;
+    font-family: 'Roboto', sans-serif;
+}
+.titulo-1{
+    color: #C3BBBB;
+}
+.texto-1{
+    color: #896666;
+}
+.segundo{
+    margin-top: 5em;
+    
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items:center ;
+    padding-top: 20%;
+    padding-bottom: 23%;
+    padding-left: 60%;
+    padding-right: 3%;
+    font-family: 'Roboto', sans-serif;
+}
+.tercero{
+    display: flex;
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    align-items:center ;
+    background-size: 100%;
+    padding-top: 18%;
+    padding-bottom: 20%;
+    padding-left: 3%;
+    padding-right: 50%;
+    font-family: 'Roboto', sans-serif;
+}
+.cuarto{
+    background-image: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    align-items:center ;
+    background-size: 100%;
+}
+.año{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color:#746077;
+}
+.quinto{
+    background-repeat: no-repeat;
+    align-items:center ;
+    text-align: center;
+    background-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #C3B5C8;
+    margin: 5%;
+    padding: 4%;
+}
+.pies{
+    background-color: black;
+    align-items:center ;
+    color: white;
+    margin: 0%;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 5%;
+}
+.lista-años{
+    list-style: none;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background-color: #C3B5C8;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 2em;
+    padding-bottom: 4em;
+    margin: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.lista-letras{
+    list-style: none;
+    margin-top: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    display: flex;
+    justify-content:space-evenly;
+    padding-top:-5em;
+}
+.boton{
+    text-align: center;
+    color:#795D81;
+    background-color: transparent;
+    border-color: transparent;
+}
+@media screen and (min-width:487px) 
+{
+    body
+    {
+        background-size: 100%;
+        background-color:#2E0E36;
+    }
+    .main-menu__list{
+        position: static;
+        transform: translateX(0%);
+        height: auto;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .main-menu__list li:first-child{
+        margin-top:auto;
+    }
+    .main-menu__list li a:hover{
+        color: rgb(70, 75, 77);
+    }
+    .main-menu__btn{
+        display: none;
+    }
+    .main-menu__list{
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+    }
+    .header-container{
+        height: 50vh;
+    }
+    .segundo{
+        margin-top: 2em;
+    }   
+}
